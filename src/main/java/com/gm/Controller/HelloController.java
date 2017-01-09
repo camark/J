@@ -1,5 +1,6 @@
 package com.gm.Controller;
 
+import com.gm.Model.User;
 import com.jfinal.core.Controller;
 
 import java.util.Date;
@@ -15,6 +16,7 @@ public class HelloController extends Controller {
 
     public void now()
     {
+        setAttr("users", User.dao.find("select * from user"));
         render("now.html");
     }
 }
