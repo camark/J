@@ -15,6 +15,6 @@ public class HelloController extends Controller {
 
     public void now()
     {
-        render("/hello/now.html");
+        render("now.html");
     }
 }

@@ -13,13 +13,13 @@ public class helloConfig extends JFinalConfig {
     public void configConstant(Constants constants) {
         constants.setDevMode(true);
 
-        //constants.setBaseViewPath("/WEB-INF/views");
+        constants.setBaseViewPath("/WEB-INF/views");
         //constants.setViewType(ViewType.JSP);
     }
 
     @Override
     public void configRoute(Routes routes) {
-        routes.add("/",HelloController.class,"/");
+        routes.add("/",HelloController.class,"/hello");
     }
 
     @Override
